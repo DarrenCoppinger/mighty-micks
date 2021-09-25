@@ -7,27 +7,28 @@ header {
 }
 
 footer{
-    /*position: absolute;*/
     bottom: 0;
     width: 100%;
-    height: 60px;
-    line-height: 60px;
+    /*height: 60px;*/
     background-color: #f5f5f5;
 }
 
-.in-nav {
-    margin-left: 60px;
-    margin-right: 60px;
+section{
+    padding-top: 60px;
 }
-
 /*Staff*/
 body{margin-top:20px;
     background:#eee;
 }
 
-/*Code snippet from: https://www.bootdey.com/snippets/view/single-advisor-profile*/
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
 
-.single_advisor_profile {
+.profile {
     position: relative;
     margin-bottom: 50px;
     -webkit-transition-duration: 500ms;
@@ -37,7 +38,7 @@ body{margin-top:20px;
     -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
     box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
 }
-.single_advisor_profile .advisor_thumb {
+.profile .thumb {
     position: relative;
     z-index: 1;
     border-radius: 15px 15px 0 0;
@@ -46,7 +47,7 @@ body{margin-top:20px;
     background-color: #3f43fd;
     overflow: hidden;
 }
-.single_advisor_profile .advisor_thumb::after {
+.profile .thumb::after {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     position: absolute;
@@ -60,12 +61,12 @@ body{margin-top:20px;
     transform: rotate(-15deg);
 }
 @media only screen and (max-width: 575px) {
-    .single_advisor_profile .advisor_thumb::after {
+    .profile .thumb::after {
         height: 160px;
         bottom: -90px;
     }
 }
-.single_advisor_profile .advisor_thumb .social-info {
+.profile .thumb .social-info {
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -73,19 +74,19 @@ body{margin-top:20px;
     right: 30px;
     text-align: right;
 }
-.single_advisor_profile .advisor_thumb .social-info a {
+.profile .thumb .social-info a {
     font-size: 14px;
     color: #020710;
     padding: 0 5px;
 }
-.single_advisor_profile .advisor_thumb .social-info a:hover,
-.single_advisor_profile .advisor_thumb .social-info a:focus {
+.profile .thumb .social-info a:hover,
+.profile .thumb .social-info a:focus {
     color: #3f43fd;
 }
-.single_advisor_profile .advisor_thumb .social-info a:last-child {
+.profile .thumb .social-info a:last-child {
     padding-right: 0;
 }
-.single_advisor_profile .single_advisor_details_info {
+.profile .details_info {
     position: relative;
     z-index: 1;
     padding: 30px;
@@ -95,7 +96,7 @@ body{margin-top:20px;
     border-radius: 0 0 15px 15px;
     background-color: #ffffff;
 }
-.single_advisor_profile .single_advisor_details_info::after {
+.profile .details_info::after {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     position: absolute;
@@ -107,54 +108,54 @@ body{margin-top:20px;
     top: 12px;
     right: 30px;
 }
-.single_advisor_profile .single_advisor_details_info h6 {
+.profile .details_info h6 {
     margin-bottom: 0.25rem;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .single_advisor_profile .single_advisor_details_info h6 {
+    .profile .details_info h6 {
         font-size: 14px;
     }
 }
-.single_advisor_profile .single_advisor_details_info p {
+.profile .details_info p {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     margin-bottom: 0;
     font-size: 14px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .single_advisor_profile .single_advisor_details_info p {
+    .profile .details_info p {
         font-size: 12px;
     }
 }
-.single_advisor_profile:hover .advisor_thumb::after,
-.single_advisor_profile:focus .advisor_thumb::after {
+.profile:hover .thumb::after,
+.profile:focus .thumb::after {
     background-color: #070a57;
 }
-.single_advisor_profile:hover .advisor_thumb .social-info a,
-.single_advisor_profile:focus .advisor_thumb .social-info a {
+.profile:hover .thumb .social-info a,
+.profile:focus .thumb .social-info a {
     color: #ffffff;
 }
-.single_advisor_profile:hover .advisor_thumb .social-info a:hover,
-.single_advisor_profile:hover .advisor_thumb .social-info a:focus,
-.single_advisor_profile:focus .advisor_thumb .social-info a:hover,
-.single_advisor_profile:focus .advisor_thumb .social-info a:focus {
+.profile:hover .thumb .social-info a:hover,
+.profile:hover .thumb .social-info a:focus,
+.profile:focus .thumb .social-info a:hover,
+.profile:focus .thumb .social-info a:focus {
     color: #ffffff;
 }
-.single_advisor_profile:hover .single_advisor_details_info,
-.single_advisor_profile:focus .single_advisor_details_info {
+.profile:hover .details_info,
+.profile:focus .details_info {
     background-color: #070a57;
 }
-.single_advisor_profile:hover .single_advisor_details_info::after,
-.single_advisor_profile:focus .single_advisor_details_info::after {
+.profile:hover .details_info::after,
+.profile:focus .details_info::after {
     background-color: #ffffff;
 }
-.single_advisor_profile:hover .single_advisor_details_info h6,
-.single_advisor_profile:focus .single_advisor_details_info h6 {
+.profile:hover .details_info h6,
+.profile:focus .details_info h6 {
     color: #ffffff;
 }
-.single_advisor_profile:hover .single_advisor_details_info p,
-.single_advisor_profile:focus .single_advisor_details_info p {
+.profile:hover .details_info p,
+.profile:focus .details_info p {
     color: #ffffff;
 }
