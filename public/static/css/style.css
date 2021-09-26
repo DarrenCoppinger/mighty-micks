@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
 main {
     margin-top: 60px;
 }
@@ -16,9 +18,18 @@ footer{
 section{
     padding-top: 60px;
 }
-/*Staff*/
-body{margin-top:20px;
+
+.section_heading{
+    font-family: 'Rye', cursive;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+body{
+    margin-top:20px;
     background:#eee;
+    /*background-color: #174b7b;*/
+    /*background-color: #cf0d15;*/
 }
 
 hr {
@@ -27,6 +38,45 @@ hr {
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+
+/* change the background color */
+.navbar-custom {
+    /*background-color: #cf0d15;*/
+    background-color: #174b7b;
+    font-family: 'Rye', cursive;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #fbd707;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffbb00;
+}
+
+/*change the brand color*/
+.navbar-custom .navbar-brand{
+    font-family: 'Rye', cursive;
+}
+
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: white;
+}
+
+.navbar-custom .nav-brand:focus,
+.navbar-custom .nav-brand:hover {
+    color: white;
+}
+
+
+/*Code snippet from: https://www.bootdey.com/snippets/view/single-advisor-profile*/
 
 .profile {
     position: relative;
@@ -41,7 +91,7 @@ hr {
 .profile .thumb {
     position: relative;
     z-index: 1;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px;
     margin: 0 auto;
     /*padding: 30px 30px 0 30px;*/
     background-color: #3f43fd;
@@ -52,9 +102,9 @@ hr {
     transition-duration: 500ms;
     position: absolute;
     width: 150%;
-    height: 80px;
+    height: 90px;
     bottom: -45px;
-    left: -25%;
+    left: -30%;
     content: "";
     background-color: #ffffff;
     -webkit-transform: rotate(-15deg);
@@ -66,96 +116,41 @@ hr {
         bottom: -90px;
     }
 }
-.profile .thumb .social-info {
+.profile .thumb .details-info {
     position: absolute;
     z-index: 1;
     width: 100%;
     bottom: 0;
-    right: 30px;
+    right: 10px;
     text-align: right;
 }
-.profile .thumb .social-info a {
+.profile .thumb .details-info a {
     font-size: 14px;
     color: #020710;
     padding: 0 5px;
 }
-.profile .thumb .social-info a:hover,
-.profile .thumb .social-info a:focus {
-    color: #3f43fd;
+.profile .thumb .details-info a:hover,
+.profile .thumb .details-info a:focus {
+    color: #cf0d15;
 }
-.profile .thumb .social-info a:last-child {
+.profile .thumb .details-info a:last-child {
     padding-right: 0;
 }
-.profile .details_info {
-    position: relative;
-    z-index: 1;
-    padding: 30px;
-    text-align: right;
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
-    border-radius: 0 0 15px 15px;
-    background-color: #ffffff;
-}
-.profile .details_info::after {
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
-    position: absolute;
-    z-index: 1;
-    width: 50px;
-    height: 3px;
-    background-color: #3f43fd;
-    content: "";
-    top: 12px;
-    right: 30px;
-}
-.profile .details_info h6 {
-    margin-bottom: 0.25rem;
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .profile .details_info h6 {
-        font-size: 14px;
-    }
-}
-.profile .details_info p {
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
-    margin-bottom: 0;
-    font-size: 14px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .profile .details_info p {
-        font-size: 12px;
-    }
-}
+
+
+
 .profile:hover .thumb::after,
 .profile:focus .thumb::after {
-    background-color: #070a57;
+    /*background-color: #070a57;*/
+    background-color: #fbd707;
 }
-.profile:hover .thumb .social-info a,
-.profile:focus .thumb .social-info a {
+.profile:hover .thumb .details-info a,
+.profile:focus .thumb .details-info a {
     color: #ffffff;
 }
-.profile:hover .thumb .social-info a:hover,
-.profile:hover .thumb .social-info a:focus,
-.profile:focus .thumb .social-info a:hover,
-.profile:focus .thumb .social-info a:focus {
-    color: #ffffff;
-}
-.profile:hover .details_info,
-.profile:focus .details_info {
-    background-color: #070a57;
-}
-.profile:hover .details_info::after,
-.profile:focus .details_info::after {
-    background-color: #ffffff;
-}
-.profile:hover .details_info h6,
-.profile:focus .details_info h6 {
-    color: #ffffff;
-}
-.profile:hover .details_info p,
-.profile:focus .details_info p {
+.profile:hover .thumb .details-info a:hover,
+.profile:hover .thumb .details-info a:focus,
+.profile:focus .thumb .details-info a:hover,
+.profile:focus .thumb .details-info a:focus {
     color: #ffffff;
 }

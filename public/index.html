@@ -14,17 +14,17 @@
 </head>
 <body>
 <header>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar-custom navbar fixed-top navbar-expand-lg navbar-dark bg-color">
 <!--    <div class="in-nav container">-->
     <div class="container">
-      <a class="navbar-brand" href="#home">Navbar</a>
+      <a class="navbar-brand" href="#home">Might Mick's</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#section-1">News</a>
@@ -45,49 +45,35 @@
 <main>
   <section id="home">
     <div  class="container ">
-      <h1>Mighty Mick's</h1>
-      <h2>Welcome to the home of heavyweight World Champion Rocky Balboa</h2>
-      <div class="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto culpa dignissimos error id illum in molestias natus nulla numquam officia officiis optio, quia quidem rem soluta voluptas. Ducimus, labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque commodi, dicta doloribus ducimus ea facilis impedit in, ipsa magnam nihil nulla perspiciatis placeat quasi qui rem tenetur voluptate voluptatem.</p>
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+          <!-- Section Heading-->
+          <div class="section_heading text-center">
+            <img src="static/img/mighty-micks.jpg" class="d-block mx-auto w-100" alt="Mighty Micks Logo">
+<!--            <h2>Welcome to the home of heavyweight World Champion Rocky Balboa</h2>-->
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <section id="section-1">
-
     <div  class="container">
-
       <hr>
-      <h1>News</h1>
-      <h2>Description</h2>
-      <div class="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto culpa dignissimos error id illum in molestias natus nulla numquam officia officiis optio, quia quidem rem soluta voluptas. Ducimus, labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque commodi, dicta doloribus ducimus ea facilis impedit in, ipsa magnam nihil nulla perspiciatis placeat quasi qui rem tenetur voluptate voluptatem.</p>
+      <div class="section_heading text-center">
+        Latest News and Updates
       </div>
-      <div class="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto culpa dignissimos error id illum in molestias natus nulla numquam officia officiis optio, quia quidem rem soluta voluptas. Ducimus, labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque commodi, dicta doloribus ducimus ea facilis impedit in, ipsa magnam nihil nulla perspiciatis placeat quasi qui rem tenetur voluptate voluptatem.</p>
-      </div>
-      <div class="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto culpa dignissimos error id illum in molestias natus nulla numquam officia officiis optio, quia quidem rem soluta voluptas. Ducimus, labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque commodi, dicta doloribus ducimus ea facilis impedit in, ipsa magnam nihil nulla perspiciatis placeat quasi qui rem tenetur voluptate voluptatem.</p>
-      </div>
-
     </div>
   </section>
-  <section id="section-2" >
 
+  <section id="section-2" >
     <div class="container">
       <hr>
-      <h1 >Upcoming Fixtures</h1>
-      <h2>Description</h2>
-      <div class="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto culpa dignissimos error id illum in molestias natus nulla numquam officia officiis optio, quia quidem rem soluta voluptas. Ducimus, labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque commodi, dicta doloribus ducimus ea facilis impedit in, ipsa magnam nihil nulla perspiciatis placeat quasi qui rem tenetur voluptate voluptatem.</p>
-      </div>
-      <div class="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto culpa dignissimos error id illum in molestias natus nulla numquam officia officiis optio, quia quidem rem soluta voluptas. Ducimus, labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque commodi, dicta doloribus ducimus ea facilis impedit in, ipsa magnam nihil nulla perspiciatis placeat quasi qui rem tenetur voluptate voluptatem.</p>
-      </div>
-      <div class="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto culpa dignissimos error id illum in molestias natus nulla numquam officia officiis optio, quia quidem rem soluta voluptas. Ducimus, labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque commodi, dicta doloribus ducimus ea facilis impedit in, ipsa magnam nihil nulla perspiciatis placeat quasi qui rem tenetur voluptate voluptatem.</p>
+      <div class="section_heading text-center">
+        Fixtures and Results
       </div>
     </div>
   </section>
+
 <!--Staff-->
   <section id="section-3">
 <!--  Code snippet from: https://www.bootdey.com/snippets/view/single-advisor-profile-->
@@ -97,8 +83,7 @@
         <div class="col-12 col-sm-8 col-lg-6">
           <!-- Section Heading-->
           <div class="section_heading text-center">
-            <h3  >Our Team </h3>
-            <p>Learn more about the people who run the Mighty Mick's!</p>
+            Our Team
           </div>
         </div>
       </div>
@@ -106,61 +91,53 @@
         <!-- Mickey's Profile-->
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="profile" >
-            <!-- Team Thumb-->
+            <!-- Thumb-->
             <div class="thumb"><img src="static/img/michael-goldmill.jpg"  width="100%" alt="Mickey Goldmill">
-              <!-- Social Info-->
-              <div class="social-info"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
-            </div>
-            <!-- Team Details-->
-            <div class="details_info">
-              <h6>Mickey Goldmill</h6>
-              <p>Club Chairperson</p>
+              <!-- Info-->
+              <div class="details-info">
+                <h6 class="mb-1">Mick Goldmill</h6>
+                <p class="mb-1">Club Chairperson</p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Single Advisor-->
+        <!-- Secretary-->
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="profile" >
-            <!-- Team Thumb-->
+            <!-- Thumb-->
             <div class="thumb"><img src="static/img/apollo-creed-2.jpg" width="100%" alt="Apollo Creed">
-              <!-- Social Info-->
-              <div class="social-info"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
-            </div>
-            <!-- Team Details-->
-            <div class="details_info">
-              <h6>Apollo Creed</h6>
-              <p>Head Coach</p>
+              <!-- Info-->
+              <div class="details-info">
+                <h6 class="mb-1">Apollo Creed</h6>
+                <p class="mb-1">Head Coach</p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Single Advisor-->
+        <!-- Secretary-->
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="profile" >
-            <!-- Team Thumb-->
-            <div class="thumb"><img src="static/img/adrian-balboa.jpg" width="100%" alt alt="Adrian Balboa">
-              <!-- Social Info-->
-              <div class="social-info"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
-            </div>
-            <!-- Team Details-->
-            <div class="details_info">
-              <h6>Adrian Balboa</h6>
-              <p>Secretary</p>
+            <!-- Thumb-->
+            <div class="thumb"><img src="static/img/adrian-balboa.jpg" width="100%" alt="Adrian Balboa">
+              <!-- Info-->
+              <div class="details-info">
+                <h6 class="mb-1">Adrian Balboa</h6>
+                <p class="mb-1">Secretary</p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Single Advisor-->
+        <!-- Treasurer-->
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="profile">
-            <!-- Team Thumb-->
+            <!-- Thumb-->
             <div class="thumb"><img src="static/img/paulie-pennino.jpeg" width="100%" alt="Paulie Pennino">
-              <!-- Social Info-->
-              <div class="social-info"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
-            </div>
-            <!-- Team Details-->
-            <div class="details_info">
-              <h6>Paulie Pennino</h6>
-              <p>Treasurer</p>
-            </div>
+              <!-- Info-->
+              <div class="details-info">
+                <h6 class="mb-1">Paulie Pennino</h6>
+                <p class="mb-1">Treasurer</p>
+              </div>
+              </div>
           </div>
         </div>
       </div>
@@ -196,20 +173,20 @@
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
-          <div class="col-md-6 col-lg-5 col-xl-4 mx-auto mb-4">
+          <div class="col-md-6 col-lg-6 col-xl-5 mx-auto mb-4">
             <!-- Links -->
             <h6 class="fw-bold mb-4">Useful links</h6>
-            <p><a href="#!" class="text-reset">Pricing</a></p>
-            <p><a href="#!" class="text-reset">Directions</a></p>
-            <p><a href="#!" class="text-reset">Tickets</a></p>
-            <p><a href="#!" class="text-reset">Help</a></p>
+            <p><a href="https://www.slystalloneshop.com/search?q=Mighty+Micks" target="_blank"  class="text-reset">Merchandise</a></p>
+            <p><a href="https://www.google.com/maps/dir//Mighty+Micks,+2147+N+Front+St,+Philadelphia,+PA+19122,+United+States/@39.9828315,-75.1346493,17z/data=!4m16!1m6!3m5!1s0x89c6c817cad4bc2d:0xd2c3ca5fc3e88407!2sMighty+Micks!8m2!3d39.9828325!4d-75.132469!4m8!1m0!1m5!1m1!1s0x89c6c817cad4bc2d:0xd2c3ca5fc3e88407!2m2!1d-75.132469!2d39.9828325!3e1" target="_blank" class="text-reset">Directions</a></p>
+            <p><a href="https://www.ticketmaster.ie/" target="_blank" class="text-reset">Tickets</a></p>
+            <p><a href="https://youtu.be/6E8cDw4EHMA" target="_blank" class="text-reset">Help</a></p>
           </div>
           <!-- Grid column -->
           <!-- Grid column -->
-          <div class="col-md-6 col-lg-5 col-xl-4 mx-auto mb-4">
+          <div class="col-md-6 col-lg-6 col-xl-5 mx-auto mb-4">
             <!-- Links -->
             <h6 class="fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-home me-3"></i> 2147 N Front St, Philadelphia, PA 19122, USA</p>
+            <p><i class="fas fa-home me-3"></i> 2147 N Front St, Philadelphia, PA, USA</p>
             <p><i class="fas fa-envelope me-3"></i>info@mightmicks.com</p>
             <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
             <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
