@@ -100,12 +100,12 @@ footer{
 
 footer .social-links a{
     color: #6C757D;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 footer .social-links a:hover,
 footer .social-links a:focus {
     color: #cf0d15;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 footer .useful-links p a{
