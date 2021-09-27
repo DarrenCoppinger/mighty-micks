@@ -27,6 +27,9 @@ footer .social-links a:focus {
 
 footer .useful-links p a{
     color: #6C757D;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+
 }
 
 footer .useful-links p a:hover,
@@ -46,6 +49,19 @@ section{
     color: #cf0d15;
 }
 
+.news-fixtures a {
+    color: #174b7b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.news-fixtures a:hover,
+.news-fixtures a:focus{
+   color: #cf0d15;
+}
+
+
 body{
     margin-top:20px;
     background:#eee;
@@ -56,9 +72,11 @@ body{
 hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border: 2px;
+    border-top: 1px solid rgba(207, 13, 21,0.1);
 }
+
+
 
 
 /* change the background color */
