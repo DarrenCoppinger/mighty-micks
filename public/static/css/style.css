@@ -125,6 +125,24 @@ footer .useful-links p a:focus {
     color: #cf0d15;
 }
 
+.lower-footer{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+.lower-footer p a{
+    color: #6C757D;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.lower-footer p a:hover,
+.lower-footer p a:focus {
+    color: #cf0d15;
+}
+
 .profile {
     position: relative;
     margin-bottom: 50px;
